@@ -45,7 +45,7 @@ print(images)
 # game variable
 hangman=0
 lists=open("words.txt","r").readlines()
-words=re.sub(r"[\n\t\s]*", "",random.choice(lists))
+words=re.sub(r"[\n\t\s]*", "",random.choice(lists)).upper()
 guessed=[]
 #End region
 
